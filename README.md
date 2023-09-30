@@ -1,6 +1,6 @@
 # txt uploader
 
-# MADE BY MR. INVISIBLE
+# MADE BY MR. SATYAM
 
 
 ## DEPLOY TO HEROKU
