@@ -169,8 +169,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'**[🎬] Vid_ID:** {str(count).zfill(3)}. {name1} ({res}) .mp4\n**Batch Name ➤** {b_name}\n\n**Extracted By ➤ {CR}**'
-                cc1 = f'**[📕] Pdf_ID:** {str(count).zfill(3)}. {name1} .pdf \n**Batch Name ➤**{b_name}\n\n**Extracted By ➤ {CR}**'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}. {name1} ({res}) .mp4\n\n**Batch Name ➤** {b_name}\n\n**Extracted By ➤ {CR}**\n**@neetumamvol1**'
+                cc1 = f'**[🗒️] Pdf_ID:** {str(count).zfill(3)}. {name1} .pdf \n\n**Batch Name ➤**{b_name}\n\n**Extracted By ➤ {CR}**\n**@neetumamvol1**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -197,7 +197,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **Bot Made By ⭐MR.SATYAM⭐**")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n**link:**`{url}`\n\n **Bot Made By** ⭐**MR.SATYAM**⭐")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -205,7 +205,7 @@ async def account_login(bot: Client, m: Message):
                     count += 1
 
             except Exception as e:
-                await m.reply_text(f"**This #Failed File is not Counted**\n**Name** =>> `{name}`\n**Link** =>> `{url}`\n\n ** fail reason »** {e}")
+                await m.reply_text(f"**This #Failed ❌ File is not Counted**\n**Name** =>> `{name}`\n**Link** =>> `{url}`\n\n ** fail reason »** {e}")
                 count += 1
                 continue
 
