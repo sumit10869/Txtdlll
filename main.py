@@ -23,7 +23,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6343803228:AAHyn7G51Ip7M75W3uxZodnjU092Xp3AAxg",
+             bot_token= "6769775461:AAHKX7yauyaBxnClEzOE3PC94S5wtCg2Gm8",
              api_id= 22439323,
              api_hash= "e0e203c8be2c2c58b04d0c59fc82f507")
 
@@ -169,8 +169,8 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:                               
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}. {name1} ({res}) .mp4\n\n**Batch Name ➤** {b_name}\n\n**Extracted By ➤ {CR}**\n**@neetumamvol1**'
-                cc1 = f'**[🗒️] Pdf_ID:** {str(count).zfill(3)}. {name1} .pdf \n\n**Batch Name ➤**{b_name}\n\n**Extracted By ➤ {CR}**\n**@neetumamvol1**'
+                cc = f'**[🎬] Vid_ID:** {str(count).zfill(3)}. {name1} ({res}) .mp4\n\n**Batch Name ➤** {b_name}\n\n**Extracted By ➤ {CR}**\n**@neetumamvol1**'
+                cc1 = f'**[📕] Pdf_ID:** {str(count).zfill(3)}. {name1} .pdf \n\n**Batch Name ➤**{b_name}\n\n**Extracted By ➤ {CR}**\n**@neetumamvol1**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
